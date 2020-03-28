@@ -22,7 +22,7 @@ public class Player : MonoBehaviour
     void Update()
     {
         if(health <= 0){
-            SceneManager.LoadScene("Menu");
+            SceneManager.LoadScene(0);
         }
 
         transform.position = Vector2.MoveTowards(transform.position, targetPos, speed * Time.deltaTime);
